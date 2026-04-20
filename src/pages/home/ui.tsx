@@ -37,7 +37,7 @@ export default function HomePage() {
       <HushhTechHeader />
 
       {/* ═══ Main Content — max-w-md centered like all other pages ═══ */}
-      <main className="flex-1 px-6 pb-32 flex flex-col gap-12 pt-4 max-w-md mx-auto w-full">
+      <main className="flex-1 px-6 pb-32 flex flex-col gap-12 pt-4 w-full max-w-7xl mx-auto">
 
         {/* ── Hero ── */}
         <section className="py-4">
@@ -276,7 +276,9 @@ export default function HomePage() {
       </main>
 
       {/* ═══ Footer Nav ═══ */}
+      <div className="block md:hidden">
       <HushhTechFooter activeTab={HushhFooterTab.HOME} />
+      </div>
     </div>
   );
 }
